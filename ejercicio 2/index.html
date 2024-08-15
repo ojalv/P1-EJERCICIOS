@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensajes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        width: auto;
+        height: fit-content;
+        border: 1px solid;
+        border-radius: 15px;
+        background-color: cornflowerblue;
+        box-shadow: 6px 6px rgb(22, 45, 60);
+        text-align: baseline;
+        padding-left: 10px;
+      }
+
+      pre {
+        position: relative;
+        background-color: wheat;
+        width: fit-content;
+        min-width: 200px;
+        border: 1px solid;
+        padding: 10px;
+      }
+      pre:nth-child(even) {
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mensajes</h1>
+    <div class="container" id="container"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
