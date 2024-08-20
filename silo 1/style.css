@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  background-image: url("https://images.pexels.com/photos/26146839/pexels-photo-26146839/free-photo-of-carretera-industria-agricultura-silo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+  background-color: burlywood;
+  border-radius: 12px;
+  border: solid 1px;
+  height: auto;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+.conteiner {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  background-color: aquamarine;
+  width: 300px;
+  height: 100px;
+}
+
+.titulos {
+  padding: 5px;
+  margin: 5px;
+}
+
+.statusSilo {
+  padding: 14px;
+  width: 300px;
+  height: auto;
+  background-color: sandybrown;
+  border: 1px solid;
+  border-radius: 12px;
+}
+
+.statusSilo img {
+  width: auto;
+  height: 240px;
+}
+
+.capacityBar {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: solid 2px;
+  overflow: hidden;
+  background-color: greenyellow;
+}
+
+.progressBar {
+  background-color: red;
+  width: 50%;
+  height: 42px;
+}
+
+.silos {
+  display: flex;
+  gap: 10px;
+}

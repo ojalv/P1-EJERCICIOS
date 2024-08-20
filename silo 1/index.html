@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de Silos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/svg/silo-svgrepo-com (1).svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section>
+      <h1 class="titulos">Gestion carga/descarga</h1>
+      <div class="conteiner" style="background-color: rgb(187, 200, 255)">
+        <h4 class="titulos">Accion</h4>
+        <select class="combo" name="Combo Usuario" id="Accion">
+          <option class="option" value="carga">Cargar Silo</option>
+          <option class="option" value="descarga">Descargar Silo</option>
+        </select>
+      </div>
+
+      <div class="conteiner" style="background-color: rgb(187, 200, 255)">
+        <h4 class="titulos">Seleccione el Silo</h4>
+        <select class="combo" name="Combo Usuario" id="TipoGrano">
+          <option class="option" value="Soja">Soja</option>
+          <option class="option" value="Maiz">Maiz</option>
+        </select>
+      </div>
+
+      <div class="conteiner" style="background-color: rgb(243, 255, 205)">
+        <h4 class="titulos">Ingrese la cantidad (Toneladas)</h4>
+        <span>Cantidad </span
+        ><input type="text" name="Carga" id="TotalCarga" style="width: 30px" />
+        <button type="button" id="BtnCargar">aceptar</button>
+      </div>
+    </section>
+    <section>
+      <h2 style="text-align: center">Estado de los silos</h2>
+      <div class="silos">
+        <div class="statusSilo" id="silo-0">
+          <h3 class="type"></h3>
+          <img src="assets/svg/silo-svgrepo-com (1).svg" />
+          <div class="capacityBar">
+            <div class="progressBar"></div>
+          </div>
+          <div class="info">
+            <span class="capacity">Capacidad Maxima</span><br />
+            <span class="currentLoad">Carga actual</span><br />
+          </div>
+        </div>
+        <div class="statusSilo" id="silo-1">
+          <h3 class="type"></h3>
+          <img src="assets/svg/silo-svgrepo-com (1).svg" />
+          <div class="capacityBar">
+            <div class="progressBar"></div>
+          </div>
+          <div class="info">
+            <span class="capacity">Capacidad Maxima</span><br />
+            <span class="currentLoad">Carga actual</span><br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
