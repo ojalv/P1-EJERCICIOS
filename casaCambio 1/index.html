@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Casa Cash 😎💸💸💸</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <fieldset>
+        <label for="id_usd">Tipo de dolar:</label>
+        <select name="id_usd" id="id_usd">
+          <option value="usd_oficial">Oficial</option>
+          <option value="usd_blue">Blue</option>
+          <option value="usd_mep">Mep</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="operacion">Operacion:</label>
+        <select name="operacion" id="operacion">
+          <option value="compra">Compra</option>
+          <option value="venta">Venta</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="monto">Comprar:</label>
+        <input type="text" name="monto" id="monto" autocomplete="off" /><span>
+          $USD</span
+        >
+      </fieldset>
+
+      <fieldset>
+        <b id="operacion-resultado"></b>
+      </fieldset>
+
+      <input
+        type="submit"
+        name="submit"
+        id="submit"
+        autocomplete="off"
+        value="Confirmar"
+      />
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

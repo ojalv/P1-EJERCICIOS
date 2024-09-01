@@ -1,0 +1,62 @@
+:root {
+  --verde-oscuro: #004225;
+  --verde-claro: #7bb661;
+  --negro: #000000;
+  --azul: #0a4ba0;
+  --naranja-dorado: #e4a646;
+  --blanco: #ffffff;
+  --beige-crema: #f5f5dc;
+}
+
+* {
+  box-sizing: border-box;
+  background-size: 150vw;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: var(--green-2);
+  background-image: url("./assets/img/pexels-karolina-grabowska-4386158.jpg");
+}
+
+form {
+  border: solid 1px;
+  border-radius: 12px;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--verde-oscuro);
+  box-shadow: var(--negro) 10px 10px 10px;
+  color: var(--beige-crema);
+  border-color: var(--negro);
+  width: 250px;
+  float: left;
+
+}
+
+form fieldset {
+  border: solid 1px var(--black-1);
+  margin: 0px;
+  border-radius: 4px;
+  border-color: var(--negro);
+}
+
+form input {
+  width: 65px;
+  background-color: var(--verde-claro);
+  border-color: var(--negro);
+}
+
+form select {
+  background-color: var(--verde-claro);
+  border-color: var(--negro);
+}
+
+input[type="submit"] {
+  border: solid 1px var(--negro);
+  border-radius: 4px;
+  padding: 0px;
+  width: auto;
+  height: 20px;
+}
