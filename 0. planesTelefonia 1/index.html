@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 20240806</title>
+    <style>
+      body {
+        background-color: cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      #contenedorPlanes {
+        border: 1px solid;
+        background-color: aliceblue;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Planes de telefonia</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+        obcaecati impedit, voluptatibus, esse similique voluptatem expedita
+        ratione reiciendis fugiat, repudiandae at dolor illum asperiores. Quas
+        dolores totam natus sapiente veritatis.
+      </p>
+    </header>
+    <main>
+      <div id="contenedorPlanes" class="hidden">
+        <div id="PlanBasico"></div>
+        <div id="PlanEstandar"></div>
+        <div id="PlanPremium"></div>
+      </div>
+      <button id="boton" type="button">Mostrar Plan</button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
