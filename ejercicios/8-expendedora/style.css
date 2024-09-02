@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+#expendedora {
+  float: left;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(180, 115, 83);
+  align-items: center;
+  padding-top: 25px;
+  border: 1px solid;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin: 50px;
+}
+#expendedora > *:not(.boca) {
+  width: 200px;
+}
+#productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#panel {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: wheat;
+}
+
+.producto {
+  position: relative;
+  font-size: 10px;
+  font-weight: 700;
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.producto > .cantidad-producto{
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+.producto > .precio-producto{
+  position: absolute;
+  bottom: 2px;
+}
+
+
+.producto > img {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+}
+
+.boca {
+  margin-top: 40px;
+  background-color: black;
+  height: 20px;
+  width: 80px;
+}
+
+#mensaje-de-ayuda{
+  float: left;
+}

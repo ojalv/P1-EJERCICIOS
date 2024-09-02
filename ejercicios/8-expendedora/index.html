@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>maquina expendedora</title>
+  </head>
+  <body>
+    <header>
+      <h1>Maquina expendedora</h1>
+    </header>
+    <main id="expendedora">
+      <div id="productos"></div>
+      <div id="panel">
+        <div>
+          <span>ingresar dinero -></span>
+          <input
+            type="text"
+            name="dinero"
+            id="inp-dinero"
+            style="width: 46px"
+            autocomplete="off"
+          /><input
+            type="submit"
+            name=""
+            value="+"
+            id="btn-ingreso-dinero"
+            onclick="expendedora.ingresarDinero()"
+          />
+        </div>
+        <div>
+          <span>recibir cambio -></span>
+          <input
+            type="submit"
+            name=""
+            value="+"
+            id="btn-dar-cambio"
+            style="margin-left: 50px"
+            onclick="expendedora.darCambio()"
+          />
+        </div>
+        <div id="saldo-disponible" class="hidden">saldo: $0</div>
+      </div>
+      <div class="boca"></div>
+    </main>
+    <aside id="mensaje-de-ayuda">
+      <p>1.Ingresa dinero en la maquina</p>
+      <p>2.Selecciona la bebida que quieras llevarte</p>
+      <p>2.Retira tu cambio</p>
+    </aside>
+    <script src="./main.js"></script>
+  </body>
+</html>
