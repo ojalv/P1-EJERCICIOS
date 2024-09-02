@@ -10,6 +10,7 @@ body {
   background-image: url("https://images.pexels.com/photos/26146839/pexels-photo-26146839/free-photo-of-carretera-industria-agricultura-silo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-size: cover;
+  flex-wrap: wrap;
 }
 
 section {
@@ -68,4 +69,6 @@ section {
 .silos {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+
 }
